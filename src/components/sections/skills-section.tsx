@@ -1,6 +1,6 @@
 import { Section, SectionTitle } from "@/components/layout/section";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Code, Database, BarChart2, FileSpreadsheet, Trophy, Brain } from "lucide-react";
+import { Code, Database, BarChart3, FileSpreadsheet, Trophy, Brain } from "lucide-react";
 import type { LucideProps } from "lucide-react";
 import type { ForwardRefExoticComponent, RefAttributes } from "react";
 
@@ -21,7 +21,7 @@ const skills: Skill[] = [
     },
     {
         title: "Power BI",
-        icon: BarChart2,
+        icon: BarChart3,
         details: [
             "Key Skills: Power Query, Data Modeling, Data Visualization",
             "Connecting to Multiple Data Sources",

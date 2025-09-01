@@ -1,7 +1,7 @@
 import { Section, SectionTitle } from "@/components/layout/section";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
-import { Linkedin, Github, Youtube, Code, BrainCircuit, BookOpen, Star, Award, PenTool, Rss } from 'lucide-react';
+import { Linkedin, Github, Youtube, Code, BrainCircuit, BookOpen, Star, Award, PenTool, Rss, Terminal, Laptop } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 const socialLinks: { name: string; href: string; Icon: LucideIcon }[] = [
@@ -9,12 +9,12 @@ const socialLinks: { name: string; href: string; Icon: LucideIcon }[] = [
     { name: "GitHub", href: "https://github.com/AbdallahNasserr", Icon: Github },
     { name: "Maven", href: "https://mavenanalytics.io/profile/Abdallah-Nasser/199163157", Icon: Award },
     { name: "Kaggle", href: "https://www.kaggle.com/abdallahprogrammer", Icon: BrainCircuit },
-    { name: "DataCamp", href: "https://www.datacamp.com/portfolio/sabelalhedaya5", Icon: Code },
+    { name: "DataCamp", href: "https://www.datacamp.com/portfolio/sabelalhedaya5", Icon: Laptop },
     { name: "Coursera", href: "https://www.coursera.org/learner/abdallah", Icon: BookOpen },
     { name: "Medium", href: "https://medium.com/@sabelalhedaya5", Icon: Rss },
     { name: "Credly", href: "https://www.credly.com/users/abdallah-nasser.f593db42", Icon: Star },
     { name: "YouTube", href: "https://www.youtube.com/@AbdallahAnalyst", Icon: Youtube },
-    { name: "HackerRank", href: "https://www.hackerrank.com/profile/abdallahprogram1", Icon: PenTool },
+    { name: "HackerRank", href: "https://www.hackerrank.com/profile/abdallahprogram1", Icon: Terminal },
     { name: "CodeForces", href: "https://codeforces.com/profile/Abdallah_Nasser", Icon: Code },
 ];
 

@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <section id="home" className="py-20 md:py-32">
+    <section id="home" className="py-20 md:py-32 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 text-center md:text-left">
@@ -31,8 +31,8 @@ export default function HeroSection() {
               </Button>
             </div>
           </div>
-          <div className="relative flex justify-center items-center">
-             <div className="absolute inset-0 bg-gradient-to-r from-teal-200 to-blue-200 rounded-full blur-3xl opacity-30"></div>
+          <div className="relative flex justify-center items-center h-[500px]">
+             <div className="absolute inset-0 bg-gradient-to-br from-primary via-blue-500 to-accent rounded-full blur-3xl opacity-50 animated-gradient"></div>
             <Image
               src="https://picsum.photos/id/64/500/500"
               alt="Sharmake Hassan"
