@@ -66,7 +66,7 @@ export default function Header() {
   return (
     <header className={cn("sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60", isScrolled && "shadow-sm")}>
       <div className="container flex h-16 items-center justify-between px-4">
-        <a href="#home" className="text-lg font-bold text-foreground transition-transform hover:scale-105">
+        <a href="#home" className="text-base md:text-lg font-bold text-foreground transition-transform hover:scale-105">
           Sharmake’s Analytics Hub
         </a>
         <nav className="hidden md:flex items-center space-x-6">
