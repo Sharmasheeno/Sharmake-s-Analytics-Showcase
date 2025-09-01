@@ -18,8 +18,11 @@ export const Section = ({ children, id, className, ...props }: SectionProps) => 
 
 export const SectionTitle = ({ children, className }: { children: ReactNode; className?: string }) => {
     return (
-        <h2 className={cn("text-3xl md:text-4xl font-bold text-center mb-12", className)}>
-            {children}
-        </h2>
+        <div className="flex flex-col items-center mb-12">
+            <h2 className={cn("text-3xl md:text-4xl font-bold text-center", className)}>
+                {children}
+            </h2>
+            <div className="mt-2 h-1 w-16 bg-primary rounded"></div>
+        </div>
     );
 };
