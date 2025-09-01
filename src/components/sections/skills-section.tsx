@@ -1,19 +1,22 @@
 import { Section, SectionTitle } from "@/components/layout/section";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Code, Database, BarChart3, FileSpreadsheet, Trophy, Brain } from "lucide-react";
-import type { LucideProps } from "lucide-react";
-import type { ForwardRefExoticComponent, RefAttributes } from "react";
+import { Trophy, Brain } from "lucide-react";
+import type { SVGProps } from "react";
+import { PythonIcon } from "@/components/icons/python-icon";
+import { PowerBiIcon } from "@/components/icons/power-bi-icon";
+import { SqlIcon } from "@/components/icons/sql-icon";
+import { ExcelIcon } from "@/components/icons/excel-icon";
 
 type Skill = {
     title: string;
-    icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>;
+    icon: (props: SVGProps<SVGSVGElement>) => JSX.Element;
     details: string[];
 };
 
 const skills: Skill[] = [
     {
         title: "Python",
-        icon: Code,
+        icon: PythonIcon,
         details: [
             "Core Libraries: NumPy, Pandas, Matplotlib, Seaborn",
             "Web Scraping: Beautiful Soup, Scrapy",
@@ -21,7 +24,7 @@ const skills: Skill[] = [
     },
     {
         title: "Power BI",
-        icon: BarChart3,
+        icon: PowerBiIcon,
         details: [
             "Key Skills: Power Query, Data Modeling, Data Visualization",
             "Connecting to Multiple Data Sources",
@@ -30,7 +33,7 @@ const skills: Skill[] = [
     },
     {
         title: "SQL",
-        icon: Database,
+        icon: SqlIcon,
         details: [
             "Key Expertise: DML, DDL, Window Functions",
             "Date & Time Functions, Aggregation and Joins",
@@ -39,7 +42,7 @@ const skills: Skill[] = [
     },
     {
         title: "Excel",
-        icon: FileSpreadsheet,
+        icon: ExcelIcon,
         details: [
             "Key Expertise: Complex Formulas, Pivot Tables",
             "Power Query, Power Pivot, Data Visualization",
