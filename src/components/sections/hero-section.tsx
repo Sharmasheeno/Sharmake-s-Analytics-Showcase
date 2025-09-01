@@ -7,7 +7,7 @@ export default function HeroSection() {
     <section id="home" className="py-20 md:py-32 overflow-hidden animate-fade-in-down">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 text-center md:text-left">
+          <div className="space-y-6 text-center md:text-left order-2 md:order-1">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Hi,
               <br />
@@ -31,7 +31,7 @@ export default function HeroSection() {
               </Button>
             </div>
           </div>
-          <div className="relative flex justify-center items-center h-[450px] w-[450px] mx-auto">
+          <div className="relative flex justify-center items-center h-[350px] w-[350px] md:h-[450px] md:w-[450px] mx-auto order-1 md:order-2">
             <svg
               className="absolute w-full h-full text-accent"
               viewBox="0 0 200 200"
@@ -48,7 +48,7 @@ export default function HeroSection() {
               alt="Sharmake Hassan"
               width={400}
               height={400}
-              className="rounded-full object-cover shadow-lg border-4 border-white z-10"
+              className="rounded-full object-cover shadow-lg border-4 border-white z-10 w-[300px] h-[300px] md:w-[400px] md:h-[400px]"
               data-ai-hint="professional headshot"
             />
           </div>
