@@ -9,6 +9,7 @@ import TestimonialsSection from '@/components/sections/testimonials-section';
 import ContactSection from '@/components/sections/contact-section';
 import Footer from '@/components/layout/footer';
 import AchievementsSection from '@/components/sections/achievements-section';
+import CommunityPresenceSection from '@/components/sections/community-presence-section';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <main className="flex-grow">
         <HeroSection />
         <AboutSection />
+        <CommunityPresenceSection />
         <ExperienceSection />
         <SkillsSection />
         <PortfolioSection />
