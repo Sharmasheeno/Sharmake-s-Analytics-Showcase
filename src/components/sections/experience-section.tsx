@@ -13,7 +13,7 @@ const experiences = [
 
 const education = {
     degree: "Bachelor's Degree in Computer Science",
-    university: "Benha University, Benha, Egypt",
+    university: "Jamhuriya University, Mogadishu, Somalia",
     grade: "Very Good",
     cgpa: "3.3"
 };
