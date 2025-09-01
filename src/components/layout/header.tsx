@@ -46,12 +46,15 @@ export default function Header() {
           href={href}
           onClick={() => isMobile && setIsMobileMenuOpen(false)}
           className={cn(
-            "font-medium transition-colors hover:text-accent",
-            activeLink === href ? "text-accent" : "text-foreground/80",
-            isMobile ? "block py-2 text-lg" : "text-sm"
+            "font-medium transition-colors relative",
+            activeLink === href ? "text-primary" : "text-foreground/80 hover:text-primary",
+            isMobile ? "block py-2 text-lg" : "text-sm",
           )}
         >
           {label}
+           {activeLink === href && !isMobile && (
+            <span className="absolute bottom-[-8px] left-0 w-full h-0.5 bg-primary"></span>
+          )}
         </a>
       ))}
        <Button asChild variant={isMobile ? "default" : "outline"} size="sm" onClick={() => isMobile && setIsMobileMenuOpen(false)}>
