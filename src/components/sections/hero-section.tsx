@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <section id="home" className="py-20 md:py-32 overflow-hidden">
+    <section id="home" className="py-20 md:py-32 overflow-hidden animate-fade-in-down">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 text-center md:text-left">
@@ -31,13 +31,23 @@ export default function HeroSection() {
               </Button>
             </div>
           </div>
-          <div className="relative flex justify-center items-center h-[500px]">
-             <div className="absolute inset-0 bg-gradient-to-br from-primary via-blue-500 to-accent rounded-full blur-3xl opacity-50 animated-gradient"></div>
+          <div className="relative flex justify-center items-center h-[450px] w-[450px] mx-auto">
+            <svg
+              className="absolute w-full h-full text-accent"
+              viewBox="0 0 200 200"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="currentColor"
+                d="M46.2,-61.2C59.2,-51.9,68.8,-37.8,73.5,-21.8C78.2,-5.8,78,12,71.1,26.5C64.2,41.1,50.6,52.3,36.2,61.3C21.8,70.3,6.5,77,-9,78.8C-24.5,80.7,-40.2,77.7,-53.2,69.1C-66.2,60.5,-76.5,46.3,-79,30.8C-81.5,15.3,-76.1,-1.5,-68.8,-15.8C-61.4,-30.1,-52,-41.9,-40.7,-52.3C-29.4,-62.7,-16.2,-71.7,-1.3,-70.5C13.6,-69.4,27.2,-57.8,40.4,-49.2"
+                transform="translate(100 100) scale(1.1)"
+              />
+            </svg>
             <Image
-              src="https://picsum.photos/id/64/500/500"
+              src="https://picsum.photos/id/64/400/400"
               alt="Sharmake Hassan"
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               className="rounded-full object-cover shadow-lg border-4 border-white z-10"
               data-ai-hint="professional headshot"
             />
