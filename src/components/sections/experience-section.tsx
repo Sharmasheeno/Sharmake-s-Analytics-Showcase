@@ -3,7 +3,7 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { GraduationCap } from "lucide-react";
 
 const experiences = [
-    { title: "Data Analyst", company: "Sourcya", date: "Oct 2024 - Present", description: "Building IoT dashboards to track car systems. Utilize Power BI, Looker Studio, and Python to develop professional reports that support data-driven decision-making." },
+    { title: "Data Analyst", company: "Burji Online", date: "Jan 2024 - Jan 2025", description: "Worked remotely, analyzing user data to provide actionable insights for business growth. Developed reports and dashboards to track key performance indicators and inform marketing strategies." },
     { title: "Power BI Developer", company: "MyClinic", date: "Oct 2024 - Apr 2025", description: "Developed interactive Power BI dashboards to monitor 300+ employees across three departments. Used SQL and Excel for data analysis, providing insights that enhanced performance." },
     { title: "Marketing Data Analyst", company: "LAFTA", date: "Sep 2024 - Nov 2024", description: "Analyzed social media ads on TikTok and Snapchat, optimizing campaigns with Power BI and Python." },
     { title: "Power BI Intern", company: "DEPI", date: "May 2024 - Sep 2024", description: "Created Power BI dashboards, transforming data into actionable insights for internal teams." },
