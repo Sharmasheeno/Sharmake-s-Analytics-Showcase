@@ -1,6 +1,6 @@
 import { Section, SectionTitle } from "@/components/layout/section";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Trophy, Brain } from "lucide-react";
+import { Trophy, BrainCircuit } from "lucide-react";
 import type { SVGProps } from "react";
 import { PythonIcon } from "@/components/icons/python-icon";
 import { PowerBiIcon } from "@/components/icons/power-bi-icon";
@@ -60,7 +60,7 @@ const skills: Skill[] = [
     },
     {
         title: "Statistics",
-        icon: Brain,
+        icon: BrainCircuit,
         details: [
             "Descriptive Statistics: Frequency, Dispersion, Central Tendency",
             "Inferential Statistics: Hypothesis Testing, Confidence Intervals",
