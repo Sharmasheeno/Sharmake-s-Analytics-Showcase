@@ -53,7 +53,7 @@ export default function TestimonialsSection() {
             <SectionTitle>Testimonials</SectionTitle>
             <div className="grid md:grid-cols-2 gap-8">
                 {testimonials.map((testimonial, index) => (
-                    <Card key={index}>
+                    <Card key={index} className="transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/10">
                         <CardContent className="p-6">
                             <blockquote className="border-l-2 pl-6 italic text-muted-foreground">
                                 "{testimonial.text}"

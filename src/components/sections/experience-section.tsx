@@ -25,8 +25,8 @@ export default function ExperienceSection() {
                     <SectionTitle>Experience</SectionTitle>
                     <div className="relative border-l-2 border-accent/20 pl-8 space-y-12">
                         {experiences.map((exp, index) => (
-                            <div key={index} className="relative">
-                                <div className="absolute -left-[42px] top-1 h-5 w-5 bg-accent rounded-full border-4 border-background"></div>
+                            <div key={index} className="relative group transition-all duration-300 hover:bg-primary/5 p-4 rounded-lg -ml-4">
+                                <div className="absolute -left-[42px] top-1 h-5 w-5 bg-accent rounded-full border-4 border-background transition-all duration-300 group-hover:scale-125"></div>
                                 <p className="text-sm text-muted-foreground">{exp.date}</p>
                                 <h3 className="font-bold text-lg">{exp.title} | {exp.company}</h3>
                                 <p className="text-muted-foreground">{exp.description}</p>
@@ -36,7 +36,7 @@ export default function ExperienceSection() {
                 </div>
                 <div className="flex flex-col">
                     <SectionTitle>Education</SectionTitle>
-                    <Card className="flex-grow">
+                    <Card className="flex-grow transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/10">
                         <CardHeader className="flex flex-row items-center gap-4">
                             <div className="p-2 bg-accent/20 rounded-md">
                                 <GraduationCap className="w-8 h-8 text-accent" />

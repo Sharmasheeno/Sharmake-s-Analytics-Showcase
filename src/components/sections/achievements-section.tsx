@@ -47,7 +47,7 @@ export default function AchievementsSection() {
             <SectionTitle>Achievements</SectionTitle>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {achievements.map((achievement, index) => (
-                    <Card key={index} className="overflow-hidden">
+                    <Card key={index} className="overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/10">
                         <Image
                             src={achievement.imgSrc}
                             alt={achievement.title}

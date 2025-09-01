@@ -74,7 +74,7 @@ export default function SkillsSection() {
             <SectionTitle>Skills</SectionTitle>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {skills.map((skill, index) => (
-                    <Card key={index} className="flex flex-col">
+                    <Card key={index} className="flex flex-col transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/10">
                         <CardHeader className="flex flex-row items-center gap-4">
                             <skill.icon className="w-10 h-10 text-accent" />
                             <CardTitle>{skill.title}</CardTitle>

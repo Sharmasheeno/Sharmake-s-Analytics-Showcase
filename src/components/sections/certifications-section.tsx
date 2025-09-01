@@ -23,7 +23,7 @@ export default function CertificationsSection() {
             <SectionTitle>Certifications</SectionTitle>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {certifications.map((cert, index) => (
-                    <Card key={index} className="hover:border-accent transition-colors">
+                    <Card key={index} className="transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/10">
                         <CardHeader className="flex flex-row items-start gap-4 space-y-0">
                             <BadgeCheck className="w-8 h-8 text-accent flex-shrink-0 mt-1" />
                             <div>
