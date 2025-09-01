@@ -3,9 +3,9 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { GraduationCap } from "lucide-react";
 
 const experiences = [
-    { title: "Data Analyst", company: "Burji Online", date: "Jan 2024 - Jan 2025", description: "Worked remotely, analyzing user data to provide actionable insights for business growth. Developed reports and dashboards to track key performance indicators and inform marketing strategies." },
+    { title: "Data Analyst", company: "Burji", date: "Jan 2024 - Jan 2025", description: "Worked remotely, analyzing user data to provide actionable insights for business growth. Developed reports and dashboards to track key performance indicators and inform marketing strategies." },
     { title: "Power BI Developer", company: "MyClinic", date: "Oct 2024 - Apr 2025", description: "Developed interactive Power BI dashboards to monitor 300+ employees across three departments. Used SQL and Excel for data analysis, providing insights that enhanced performance." },
-    { title: "Marketing Data Analyst", company: "LAFTA", date: "Sep 2024 - Nov 2024", description: "Analyzed social media ads on TikTok and Snapchat, optimizing campaigns with Power BI and Python." },
+    { title: "Marketing Data Analyst", company: "Iibiye Online", date: "Sep 2024 - Nov 2024", description: "Analyzed social media ads on TikTok and Snapchat, optimizing campaigns with Power BI and Python." },
     { title: "Power BI Intern", company: "DEPI", date: "May 2024 - Sep 2024", description: "Created Power BI dashboards, transforming data into actionable insights for internal teams." },
     { title: "Freelance Data Analyst", company: "Freelance", date: "Oct 2024 - Present", description: "Completed 25+ projects in data analysis, web scraping, and dashboard creation." }
 ];
