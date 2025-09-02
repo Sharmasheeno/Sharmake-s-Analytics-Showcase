@@ -23,8 +23,8 @@ export default function Home() {
         <SkillsSection />
         <PortfolioSection />
         <CertificationsSection />
-        <AchievementsSection />
         <TestimonialsSection />
+        <AchievementsSection />
         <ContactSection />
       </main>
       <Footer />
