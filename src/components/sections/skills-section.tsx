@@ -1,11 +1,14 @@
+"use client";
+
 import { Section, SectionTitle } from "@/components/layout/section";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Trophy, BrainCircuit } from "lucide-react";
 import type { SVGProps } from "react";
 import { PythonIcon } from "@/components/icons/python-icon";
 import { PowerBiIcon } from "@/components/icons/power-bi-icon";
 import { SqlIcon } from "@/components/icons/sql-icon";
 import { ExcelIcon } from "@/components/icons/excel-icon";
+import { TrophyIcon } from "@/components/icons/trophy-icon";
+import { StatisticsIcon } from "@/components/icons/statistics-icon";
 
 type Skill = {
     title: string;
@@ -45,14 +48,14 @@ const skills: Skill[] = [
     },
     {
         title: "Competitive Programming",
-        icon: Trophy,
+        icon: TrophyIcon,
         details: [
             { title: "Key Skills:", points: ["Solved over 1,500 coding challenges", "Languages: C++, Python, SQL", "Skilled in applying algorithms for efficiency"] }
         ],
     },
     {
         title: "Statistics",
-        icon: BrainCircuit,
+        icon: StatisticsIcon,
         details: [
             { title: "Descriptive Statistics:", points: ["Frequency", "Dispersion", "Central Tendency"] },
             { title: "Inferential Statistics:", points: ["Hypothesis Testing", "Confidence Intervals"] },
