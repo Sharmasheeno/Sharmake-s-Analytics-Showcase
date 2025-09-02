@@ -52,21 +52,24 @@ export default function TestimonialsSection() {
         <Section id="testimonials">
             <SectionTitle>Testimonials</SectionTitle>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                {testimonials.map((testimonial, index) => (
-                    <Card key={index} className="transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/10">
-                        <CardContent className="p-6 text-center">
-                           <div className="flex justify-center mb-4">
-                                <testimonial.Icon className="w-20 h-20 rounded-full" />
-                           </div>
-                            <h3 className="font-bold text-lg">{testimonial.name}</h3>
-                            <p className="text-sm text-muted-foreground">{testimonial.location}</p>
-                            <p className="text-sm font-semibold mt-1">{testimonial.title}</p>
-                            <blockquote className="mt-4 italic text-muted-foreground before:content-['\"'] after:content-['\"']">
-                                {testimonial.text}
-                            </blockquote>
-                        </CardContent>
-                    </Card>
-                ))}
+                {testimonials.map((testimonial, index) => {
+                    const Icon = testimonial.Icon;
+                    return (
+                        <Card key={index} className="transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/10">
+                            <CardContent className="p-6 text-center">
+                               <div className="flex justify-center mb-4">
+                                    <Icon className="w-20 h-20 rounded-full" />
+                               </div>
+                                <h3 className="font-bold text-lg">{testimonial.name}</h3>
+                                <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                                <p className="text-sm font-semibold mt-1">{testimonial.title}</p>
+                                <blockquote className="mt-4 italic text-muted-foreground">
+                                    "{testimonial.text}"
+                                </blockquote>
+                            </CardContent>
+                        </Card>
+                    );
+                })}
             </div>
         </Section>
     )
